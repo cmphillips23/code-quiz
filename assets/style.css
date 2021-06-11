@@ -3,11 +3,6 @@ header {
     color: #6F2DBD;
 }
 
-header h3 {
-    margin: 2vw;
-    text-align: left;
-}
-
 header h1 {
     text-align: center;
 }
@@ -17,6 +12,17 @@ body {
     color:#6F2DBD;
     text-align: center;
     font-size: x-large;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 4vw;
+}
+
+.time {
+    font-size: xx-large;
 }
 
 .start {
@@ -43,21 +49,20 @@ body {
     top: 0;
 }
 
-.container {
+.container-questions {
     display: flex;
-}
-
-.questions {
     justify-content: center;
     font-size: xx-large;
 }
 
 .question-title {
     margin-bottom: 3vw;
+    visibility: hidden;
 }
 
 .choices {
     display: inline-block;
+    visibility: hidden;
 }
 
 .choices button {

@@ -8,22 +8,27 @@
     <title>Code Quiz</title>
 </head>
 <header>
-    <h3>High Scores</h3>
-    <h1 class="title">Code Quiz Challenge</h1>
-    <div class="timer">
-        <span class="time">00:00</span>
+    <div class="header-container">
+        <div>
+            <h3>High Scores</h3>
+        </div>
+        <div class="timer">
+            <span class="time">00:00</span>
+        </div>
     </div>
+    <h1 id="title" class="title">Code Quiz Challenge</h1>
+
 </header>
 
 <body>
-    <p>Try to answer the following questions correctly before the time expires.  Incorrect answers will reduce your score/remaining time available.</p>
-    <button class="start">Start Quiz!</button>
+    <p id="desc" class="desc">Try to answer the following questions correctly before the time expires.  Incorrect answers will reduce your score/remaining time available.</p>
+    <button onclick="startQuiz()" id="start" class="start">Start Quiz!</button>
 
     <!--- QUESTIONS --->
-    <div class="container questions">
+    <div class="container-questions">
         <div>
-            <h3 class="question-title">Question displayed here?</h3>
-            <div class="choices">
+            <h3 id="question-title" class="question-title">Question displayed here?</h3>
+            <div id="choices" class="choices">
                 <div>
                     <button id="choice-a">A</button>This is answer choice A
                 </div>
