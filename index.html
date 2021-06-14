@@ -8,42 +8,41 @@
     <title>Code Quiz</title>
 </head>
 <header>
-    <div class="header-container">
-        <div>
-            <h3>High Scores</h3>
-        </div>
-        <div class="timer">
-            <span class="time">00:00</span>
-        </div>
-    </div>
     <h1 id="title" class="title">Code Quiz Challenge</h1>
-
 </header>
 
 <body>
-    <p id="desc" class="desc">Try to answer the following questions correctly before the time expires.  Incorrect answers will reduce your score/remaining time available.</p>
+    <p id="desc" class="desc">Try to answer the following questions correctly.  Each question is worth 20 points for a total of 100 points.</p>
     <button onclick="startQuiz()" id="start" class="start">Start Quiz!</button>
 
     <!--- QUESTIONS --->
     <div class="container-questions">
         <div>
-            <h3 id="question-title" class="question-title">Question displayed here?</h3>
-            <div id="choices" class="choices">
-                <div>
-                    <button id="choice-a">A</button>This is answer choice A
-                </div>
-                <div>
-                    <button id="choice-b">B</button>This is answer choice B
-                </div>
-                <div>
-                    <button id="choice-c">C</button>This is answer choice C
-                </div>
-                <div>
-                    <button id="choice-d">D</button>This is answer choice D
-                </div>
+            <h3 id="question" class="question">Question displayed here?</h3>
+        </div>
+        <div id="choices" class="choices">
+            <div>
+                <button id="choice-a" onclick="scoreHandler('a')">A</button><span id="answer-a">This is answer choice A</span>
+            </div>
+            <div>
+                <button id="choice-b" onclick="scoreHandler('b')">B</button><span id="answer-b">This is answer choice B</span>
+            </div>
+            <div>
+                <button id="choice-c" onclick="scoreHandler('c')">C</button><span id="answer-c">This is answer choice C</span>
+            </div>
+            <div>
+                <button id="choice-d" onclick="scoreHandler('d')">D</button><span id="answer-d">This is answer choice D</span>
             </div>
         </div>
+        <div>
+            <h3 id="response"></h3>
+        </div>
     </div>
+
+    <div>
+        <h1 id="final"></h1>
+    </div>
+    <button id="again" onclick="startQuiz()">Try Again</button>
 
     <script src="./assets/script.js"></script>
 </body>

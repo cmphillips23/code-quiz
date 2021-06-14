@@ -50,22 +50,22 @@ body {
 }
 
 .container-questions {
-    display: flex;
     justify-content: center;
     font-size: xx-large;
 }
 
-.question-title {
+.question {
     margin-bottom: 3vw;
     visibility: hidden;
 }
 
 .choices {
     display: inline-block;
+    text-align: start;
     visibility: hidden;
 }
 
-.choices button {
+.choices button, #again {
     margin-right: 1vw;
     margin-bottom: 2vw;
     outline: none;
@@ -81,12 +81,16 @@ body {
     box-shadow: 0 3px;
 }
 
-.choices button:hover {
+.choices button:hover, #again:hover {
     box-shadow: 0 2px;
     top: -2px;
 }
 
-.choices button:active {
+.choices button:active #again:active {
     box-shadow: 0 0px;
     top: 0;
+}
+
+#again {
+    visibility: hidden;
 }
