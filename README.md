@@ -4,4 +4,4 @@ This web app is a simple quiz consisting of 5 JavaScript questions.  These are b
 
 ![screenshot](./assets/code-quiz.PNG)
 
-[link](https://cmphillips23.github.io/code-quiz/)
+[https://cmphillips23.github.io/code-quiz/](https://cmphillips23.github.io/code-quiz/)
